@@ -1,0 +1,31 @@
+plugins {
+    id 'java'
+}
+
+group 'fabric-workshop'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'org.hyperledger.fabric-chaincode-java', name: 'fabric-chaincode-shim', version: '1.+'
+    compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.9.6'
+    compile 'commons-lang:commons-lang:2.6'
+    compile 'commons-io:commons-io:2.6'
+    compileOnly 'org.projectlombok:lombok:1.18.6'
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
+
+//shadowJar {
+//    baseName = 'chaincode'
+//    version = null
+//    classifier = null
+//    
+//    manifest {
+//        attributes 'Main-Class': 'com.thoughtworks.fabric.workshop.AccountBasedChaincode'
+//    }
+//}
