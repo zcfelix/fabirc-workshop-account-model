@@ -2,7 +2,15 @@ package com.thoughtworks.fabric.workshop.model;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
+@JsonSerialize
+@Getter
+@Setter
+@NoArgsConstructor
 public class ChaincodeResponse {
     private String message;
     private String code;
