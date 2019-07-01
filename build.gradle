@@ -12,6 +12,14 @@ repositories {
     mavenCentral()
 }
 
+sourceSets {
+    main {
+        java {
+            srcDir 'chaincode/java/src/main/java'
+        }
+    }
+}
+
 dependencies {
     compile group: 'org.hyperledger.fabric-chaincode-java', name: 'fabric-chaincode-shim', version: '1.+'
     compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.9.6'

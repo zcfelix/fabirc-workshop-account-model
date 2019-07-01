@@ -29,7 +29,7 @@ if [ "$LANGUAGE" = "node" ]; then
 fi
 
 if [ "$LANGUAGE" = "java" ]; then
-	CC_SRC_PATH="/opt/gopath/src/github.com/chaincode/chaincode_example02/java/"
+	CC_SRC_PATH="/opt/gopath/src/github.com/chaincode/java/"
 fi
 
 echo "Channel name : "$CHANNEL_NAME
